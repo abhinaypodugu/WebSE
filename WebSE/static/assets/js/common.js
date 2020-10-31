@@ -383,7 +383,7 @@ function parallax() {
 
 	});
 
-  $(.alert).alert()
+  $('.alert').alert()
   //
   // function pherror(){
   //   var pherror = document.getElementById('pherror')
