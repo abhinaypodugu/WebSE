@@ -178,6 +178,7 @@ img {
 .btn-danger,.label-danger,.alert-danger {
 	background-color:#e74c3c;
 	border-color:#e74c3c;
+	text-color : #ffffff;
 }
 .btn-danger:hover,.btn-danger:focus {
 	background-color:#c0392b;

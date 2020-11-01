@@ -121,8 +121,8 @@
 
 				{% if messages %}
 				  {% for message in messages %}
-				  <div {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %} style="background-color:#5cb85c; text-color:#ffffff;" {%endif%} style="text-color:#ffffff;" class="bootstrap-iso-min alert alert-{{message.tags}}" id="msg" role="alert">
-				    <b>{{ message }}</b>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<a class="alert-link"  href="#food-donation">Here</a>{% endif  %}
+				  <div {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %} style="background-color:#5cb85c; color:#ffffff;" {%endif%} style="color: #ffffff;" class="bootstrap-iso-min alert alert-{{message.tags}}" id="msg" role="alert">
+				    <b>{{ message }}</b>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<a class="alert-link"  style="color:#CCE5FF;" href="#food-donation"><u> Here</u></a>{% endif  %}
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
     				<span aria-hidden="true" style="color:#ffffff; font-size:26px;">&times;</span>
   					</button>
@@ -162,22 +162,17 @@
 					</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-4 col-sm-6" >
 				<div class="service-box wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">
-					<img src="https://source.unsplash.com/1600x900/?help" alt="Image not available yet!!">
-					<h3>August 7, 2015 <br/>Square Garden</h3>
+					<img src="{{active_event.image.url}}" alt="Image not available yet!!">
+					<h3>{{active_event.date}} <br/>{{active_event.place}}</h3>
 					<div class="text-left">
 						<p>
-							I will place all the necessary content for this event here, including where they can register, join, attend &amp; so on.
+							{{ active_event.message }}
 						</p>
-						<p>
-							If not enough room, I will link to learn more, a new event page dedicated.
-						</p>
-						<p>
-							Yap. Really looking goody awesome!
-						</p>
+
 						<p class="text-center">
-							<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+							<button type="button" class="btn btn-info btn-md"><a href="{{active_event.file.url}}" download>Learn More</a></button>
 						</p>
 					</div>
 				</div>
@@ -399,8 +394,8 @@
 		</div>
 	<div class="row">
 
-			<div class="col-lg-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 25rem; background-color: #ffffff;">
+			<div class="col-lg-4">
+				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 28rem; background-color: #ffffff;">
 					<img src="{% static "assets/img/thanoj1.jpg" %}" class="image-fluid image-responsive" id="team-pic" alt="...">
 						<div class="card-body">
 							<h5 class="card-title" style="color:black">Sai Thanoj</h5>
@@ -414,8 +409,8 @@
 					</div>
 				</div>
 
-			<div class="col-md-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" style="width: 25rem;background-color: #ffffff;">
+			<div class="col-md-4">
+				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" style="width: 28rem;background-color: #ffffff;">
 					<div class="pic"><img src="{% static "assets/img/abhi.jpg" %}" class="image-responsive" id="team-pic" alt="..."></div>
 					<div class="card-body">
 						<h5 class="card-title" style="color:black">Abhinay Podugu</h5>
@@ -428,8 +423,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" style="width: 25rem;">
+			<div class="col-md-4">
+				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" style="width: 28rem;">
 					<img src="{% static "assets/img/rishi.jpg" %}" class="image-responsive" id="team-pic" alt="...">
 					<div class="card-body">
 						<h5 class="card-title" style="color:black">Rishi Vinayaka</h5>
@@ -442,20 +437,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<!-- <div class="col-md-3">
 				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.5s" style="width: 25rem;">
 					<img src="{% static "assets/img/hrudai.jpg" %}" id="team-pic" class="image-responsive" alt="...">
 					<div class="card-body">
 						<h5 class="card-title" style="color:black">AVS Hrudai</h5>
-						<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
+						<h6 class="card-sub-title" style="color:black"> Team 2 </h6>
 						<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						<a href="#" class="fa fa-facebook" ></a>
 						<a href="#" class="fa fa-google" ></a>
 						<a href="#" class="fa fa-twitter" ></a>
-						<!-- <a href="#" class="fa fa-instagram" ></a> -->
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 </div>
@@ -724,7 +718,7 @@
 
                                 <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="phone">Phone<span class="required">*</span></label>
-                                    <input type="text" name="phone_fd" id="phone" size="10" value="" required/>
+                                    <input type="text" name="phone_fd" id="phone" size="10" data-msg="Invalid Phone Number" value="" required/>
 																		<span id="pherror"></span>
 
 
@@ -826,6 +820,6 @@
 <script src='{% static "assets/js/validate.js" %}'></script>
 <script src='{% static "assets/js/common.js" %}'></script>
 <script src='{% static "assets/js/wow.js" %}'></script>
-<!-- <script>setTimeout(function(){$('#msg').remove();},4000)</script> -->
+<script>setTimeout(function(){$('#msg').remove();},20000)</script>
 </body>
 </html>

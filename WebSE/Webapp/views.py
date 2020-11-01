@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.views.generic import View
-from Webapp.models import FoodDonationModel,EventGallery
+from Webapp.models import FoodDonationModel,EventGallery,ActiveEvent
 from django.http import HttpResponse,HttpResponseRedirect
 from .forms import FoodDonationForm
 from django.contrib import messages
@@ -10,7 +10,10 @@ def index(request):
     # TODO: get image elements and make page dynamic
     events = EventGallery.objects.order_by('id')
 
-    return render(request,'Webapp/zero-hunger/index.html',{'events':events})
+
+    active_event = ActiveEvent.objects.get(pk=1)
+
+    return render(request,'Webapp/zero-hunger/index.html',{'events':events, 'active_event':active_event})
 
 def FoodDonationView(request):
 

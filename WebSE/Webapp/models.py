@@ -19,3 +19,14 @@ class EventGallery(models.Model):
 
     def __str__(self):
         return str(self.date)
+
+class ActiveEvent(models.Model):
+    event_name = models.CharField(max_length=256)
+    image = models.ImageField(upload_to='eventpics')
+    file = models.FileField(upload_to='eventfiles',default="/media/eventfiles/def.pdf")
+    place = models.CharField(max_length=128)
+    message = models.TextField()
+    date = models.DateTimeField(default=datetime.datetime.now)
+
+    def __str__(self):
+        return self.event_name
