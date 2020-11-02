@@ -97,7 +97,7 @@
 			<a class="dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(255, 255, 255); color: #01b0d1; text-shadow: 0.25px 0.25px 0.5px #01b0d1;" >Donate <span class="caret"></span> </a>
 			<ul class="dropdown-menu">
 				<li> <a href="#food-donation" style="font-family:verdana">Donate Food</a> </li>
-				<li> <a href="#" style="font-family:verdana">Donate Money</a> </li>
+				<li> <a href="#money-donation" style="font-family:verdana">Donate Money</a> </li>
 			</ul>
 		</li>
 		<li>
@@ -807,6 +807,89 @@
         </div>
     </div>
     </section>
+
+    ====================================================================================-->
+<section id="money-donation" class="parallax section" style="background-image: url(https://source.unsplash.com/1600x900/?food,hunger);">
+    <div class="wrapsection">
+        <div class="parallax-overlay" style="background-color: #FFA500;opacity:0.90;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="maintitle">
+                        <h3 class="section-title">Money Donation Details</h3>
+                        <!--<p class="lead">
+                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+                        </p> -->
+                    </div>
+                    <form id="contact"  class="text-left" method="POST" action="mydonate">
+											{% csrf_token %}
+                        <fieldset>
+
+                            <div class="row">
+                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.1s" data-wow-duration="2s">
+                                    <label for="name">Name<span class="required">*</span></label>
+                                    <input type="text" name="name_fd" id="name" size="30" value="" required/>
+																		<!-- {% for err in form.name_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+                                </div>
+
+
+
+                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+                                    <label for="upi">UPI ID<span class="required">*</span></label>
+                                    <input type="text" name="upi_fd" id="upi_id" size="10" data-msg="Invalid UPI ID" value="" required/>
+																		<span id="pherror"></span>
+
+
+
+																		<!-- {% for err in form.phone_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5">
+                                    <label for="Amount">Amountt<span class="required">*</span></label>
+                                    <input type="text" name="Amount_fd" id="Amount" size="10" data-msg="Invalid Amount" value="" required/>
+																		<span id="pherror"></span>
+
+																		<!-- {% for err in form.Location_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+                                </div>
+							</div>
+
+							 <div class="row">
+
+                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
+                                    <label for="Note">Note<span></span></label>
+                                    <textarea name="NOte_fd" id="Note" required></textarea>
+																		<!-- {% for err in form.Location_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+                                </div>
+							</div>
+
+                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+                                
+                                <input href="upi://pay?pa=9891341086@upi&pn=NARENDRA SISODIYA&cu=INR" class="submit_fd" type="submit" name="DONATE" value="DONATE"/>
+                            </div>
+
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-- Bootstrap core JavaScript
+	================================================== -->
 
 <!-- Bootstrap core JavaScript
 	================================================== -->
