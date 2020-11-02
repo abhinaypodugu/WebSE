@@ -30,3 +30,11 @@ class ActiveEvent(models.Model):
 
     def __str__(self):
         return self.event_name
+
+class FaqsModel(models.Model):
+    question = models.CharField(max_length=512)
+    answer = models.TextField()
+    tag = models.CharField(max_length=128, default="One")
+
+    def __str__(self):
+        return str(self.id)
