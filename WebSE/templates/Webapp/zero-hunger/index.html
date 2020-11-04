@@ -709,11 +709,9 @@
                 <div class="col-md-12">
                     <div class="maintitle">
                         <h3 class="section-title">Food Donation Details</h3>
-                        <!--<p class="lead">
-                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
-                        </p> -->
+
                     </div>
-                    <form id="contact"  class="text-left" method="POST" action="fddonate">
+                    <form id="contact"  method="post" action="fddonate">
 											{% csrf_token %}
                         <fieldset>
 
@@ -726,15 +724,10 @@
 																		{% endfor %} -->
                                 </div>
 
-
-
                                 <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="phone">Phone<span class="required">*</span></label>
                                     <input type="text" name="phone_fd" id="phone" size="10" data-msg="Invalid Phone Number" value="" required/>
 																		<span id="pherror"></span>
-
-
-
 																		<!-- {% for err in form.phone_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
@@ -742,7 +735,6 @@
                             </div>
 
                             <div class="row">
-
                                 <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
                                     <label for="Location">Location<span class="required">*</span></label>
                                     <textarea name="Location_fd" id="Location" required></textarea>
@@ -750,12 +742,10 @@
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
                                 </div>
-							</div>
+													 </div>
 
 							<div class="row">
-
 								<div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-
 
                                     <label for="Food type">Food type<span class="required">*</span></label>
                                     <select name="Foodtype_fd" id="Food type" required>
@@ -771,9 +761,7 @@
 																		<!-- {% for err in form.FoodType_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-
-
-								</div>
+																	</div>
 
                                 <div class="col-md-2 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="Amount">Amount (in kg)<span class="required">*</span></label>
@@ -781,7 +769,7 @@
 																		<!-- {% for err in form.Amount_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-								</div>
+																	</div>
 
                                 <div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
 
@@ -799,11 +787,9 @@
 																		<!-- {% for err in form.Reason_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
+																</div>
 
-
-								</div>
-
-                            </div>
+            	</div>
 
 
                             <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
@@ -829,6 +815,14 @@
 	            <div class="row">
 	                <div class="col-md-12">
 	                    <div class="maintitle">
+
+												<div class="alert alert-dismissible container" style="background-color:#FFF3CD" role="alert">
+												<p style="font-size: 20px; color:#444;">This Form is<strong> still under progress.</strong>
+												<button style="font-size:40px" type="button" class="close" data-dismiss="alert" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button></p>
+												</div>
+
 	                        <h3 class="section-title">Money Donation Details</h3>
 	                        <!--<p class="lead">
 	                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
@@ -888,10 +882,11 @@
 
 	                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
 	                                <div id="smart-button-container">
-<div style="background: #ff912f;text-align: center;border: 2px solid #8a4100;margin-top:20px; padding: 15px;color: white;" class="col-sm-2">
-	<a href="upi://pay?pa=bsaithanoj@oksbi&pn=BHUKYA SAITHANOJ&cu=INR" id="_UPI_BUTTON_" ><b>Pay using UPI</b></a>
 
-</div>
+																		<div style="background: #ff912f;text-align: center;border: 2px solid #8a4100;margin-top:20px; padding: 15px;color: white;" class="col-sm-2">
+																			<a href="upi://pay?pa=bsaithanoj@oksbi&pn=BHUKYA SAITHANOJ&cu=INR" id="_UPI_BUTTON_" ><b>Pay using UPI</b></a>
+																		</div>
+
 	                                <div style="text-align: center;">
 	                                <div id="paypal-button-container" style="margin-top:30px"></div>
 	                                </div>
@@ -949,7 +944,7 @@
 <script src='{% static "assets/js/jquery.scrollTo.min.js" %}'></script>
 <script src='{% static "assets/js/jquery.localScroll.min.js" %}'></script>
 <script src='{% static "assets/js/jquery.magnific-popup.min.js" %}'></script>
-<script src='{% static "assets/js/validate.js" %}'></script>
+<!-- <script src='{% static "assets/js/validate.js" %}'></script> -->
 <script src='{% static "assets/js/common.js" %}'></script>
 <script src='{% static "assets/js/wow.js" %}'></script>
 <script>setTimeout(function(){$('#msg').remove();},20000)</script>
