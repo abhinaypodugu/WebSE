@@ -2,6 +2,8 @@
 {% load static %}
 <html lang="en">
 <head>
+
+
 	<!-- Meta, title, CSS, favicons, etc. -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +57,7 @@
 }
 </style> -->
 </head>
-<body>
+<body >
 <!-- Begin Hero Bg -->
 <div id="parallax">
 </div>
@@ -87,11 +89,9 @@
 		<li>
 		<a href="#gallery">Gallery</a>
 		</li>
+
 		<li>
-		<a href="#slider">Testimonials</a>
-		</li>
-		<li>
-			<a href="#team">Team</a>
+			<a href="#team">Contact &amp; Team</a>
 		</li>
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(255, 255, 255); color: #01b0d1; text-shadow: 0.25px 0.25px 0.5px #01b0d1;" >Donate <span class="caret"></span> </a>
@@ -103,9 +103,10 @@
 		<li>
 		<a href="#faq">FAQ</a>
 		</li>
+
 		<li>
-		<a href="#contactarea">Contact</a>
-		</li>
+           <a href="/login">Login</a>
+       </li>
 	</ul>
 	</nav>
 </div>
@@ -137,7 +138,7 @@
 				<p>
 
 					<a href="#gallery" class="btn btn-default btn-lg wow fadeInLeft" role="button"> View Gallery </a> &nbsp;
-					<a href="#" class="btn btn-default btn-lg wow fadeInRight" role="button">Find a Cause</a>
+					<a href="#money-donation" class="btn btn-default btn-lg wow fadeInRight" role="button">Find a Cause</a>
 				</p>
 			</div>
 		</div>
@@ -180,41 +181,41 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
 					<span class="glyphicon glyphicon-stats"></span>
-					<h3>1.386 Participants</h3>
+					<h3>1024 Participants</h3>
 					<p>
 						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
 					</p>
-					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+					<!-- <button type="button" class="btn btn-info btn-md"><a >Learn More</a></button> -->
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
 					<span class="glyphicon glyphicon-tree-deciduous"></span>
-					<h3>195 Concerts</h3>
+					<h3>2048 Concerts</h3>
 					<p>
 						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
 					</p>
-					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+					<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
 					<span class="glyphicon glyphicon-heart"></span>
-					<h3>268 Sponsors</h3>
+					<h3>512 Sponsors</h3>
 					<p>
 						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
 					</p>
-					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+					<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
 					<span class="glyphicon glyphicon-usd"></span>
-					<h3>$5.647 Donated</h3>
+					<h3>$4096 Donated</h3>
 					<p>
 						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
 					</p>
-					<button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+					<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
 				</div>
 			</div>
 		</div>
@@ -325,7 +326,7 @@
 </section>
 <!-- Text Carousel
 	================================================== -->
-<section id="slider" class="parallax section" style="background-image: url({% static "assets/img/4.jpg" %});">
+<!-- <section id="slider" class="parallax section" style="background-image: url({% static "assets/img/4.jpg" %});">
 <div class="wrapsection">
 	<div class="container">
 		<div class="row">
@@ -373,6 +374,25 @@
 		</div>
 	</div>
 </div>
+</section> -->
+
+<!-- Random
+	================================================== -->
+<section class="whitecolor parallax section" style="background-image: url({%static "assets/img/5.jpg" %});">
+<div class="wrapsection">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12 sol-sm-12">
+			<div class="maintitle">
+				<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span> are the same</h3>
+				<p class="lead bottom0">
+					 Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
 </section>
 <!-- Team -->
 <!-- ========================================== -->
@@ -394,14 +414,14 @@
 		</div>
 	<div class="row">
 
-			<div class="col-lg-4">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 28rem; background-color: #ffffff;">
+			<div class="col-lg-3">
+				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 25rem; background-color: #ffffff;">
 					<img src="{% static "assets/img/thanoj1.jpg" %}" class="image-fluid image-responsive" id="team-pic" alt="...">
 						<div class="card-body">
 							<h5 class="card-title" style="color:black">Sai Thanoj</h5>
 							<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
 							<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="https://m.me/Sai Thanoj" class="fa fa-facebook" ></a>
+							<a href="https://m.me/SaiThanoj" class="fa fa-facebook" ></a>
 							<a href="mailto:cs18b005@iittp.ac.in" class="fa fa-google" ></a>
 							<a href="#" class="fa fa-twitter" ></a>
 							<!-- <a href="#" class="fa fa-instagram" ></a> -->
@@ -409,35 +429,35 @@
 					</div>
 				</div>
 
-			<div class="col-md-4">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" style="width: 28rem;background-color: #ffffff;">
+			<div class="col-md-3">
+				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" style="width: 25rem;background-color: #ffffff;">
 					<div class="pic"><img src="{% static "assets/img/abhi.jpg" %}" class="image-responsive" id="team-pic" alt="..."></div>
 					<div class="card-body">
 						<h5 class="card-title" style="color:black">Abhinay Podugu</h5>
 						<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
 						<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="https://m.me/Abhinay Podugu" class="fa fa-facebook" ></a>
-						<a href="mailto:cs18b027@iittp.ac.in" class="fa fa-google" ></a>
+						<a href="https://m.me/AbhinayPodugu" class="fa fa-facebook" ></a>
+						<a href="mailto:cs18b027@iittp.ac.in"  class="fa fa-google" ></a>
 						<a href="#" class="fa fa-twitter" ></a>
 						<!-- <a href="#" class="fa fa-instagram" ></a> -->
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" style="width: 28rem;">
+			<div class="col-md-3">
+				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" style="width: 25rem;">
 					<img src="{% static "assets/img/rishi.jpg" %}" class="image-responsive" id="team-pic" alt="...">
 					<div class="card-body">
 						<h5 class="card-title" style="color:black">Rishi Vinayaka</h5>
 						<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
 						<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="https://m.me/Rishi Vinayaka" class="fa fa-facebook" ></a>
+						<a href="https://m.me/RishiVinayaka" class="fa fa-facebook" ></a>
 						<a href="mailto:cs18b002@iittp.ac.in" class="fa fa-google" ></a>
 						<a href="#" class="fa fa-twitter" ></a>
 						<!-- <a href="#" class="fa fa-instagram" ></a> -->
 					</div>
 				</div>
 			</div>
-			<!-- <div class="col-md-3">
+			<div class="col-md-3">
 				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.5s" style="width: 25rem;">
 					<img src="{% static "assets/img/hrudai.jpg" %}" id="team-pic" class="image-responsive" alt="...">
 					<div class="card-body">
@@ -449,7 +469,7 @@
 						<a href="#" class="fa fa-twitter" ></a>
 					</div>
 				</div>
-			</div> -->
+			</div>
 		</div>
 
 </div>
@@ -476,23 +496,28 @@
 			</div>
 		</div>
 		<div class="row">
+
 			<div class="col-md-4 col-sm-12">
 				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
 					<div class="panel-group">
+						{% if faqs1 %}
+						{% for faq in faqs1 %}
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-								How old can I be? </a>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.tag}}">
+								{{faq.question}} </a>
 								</h4>
 							</div>
-							<div id="collapseOne" class="panel-collapse collapse">
+							<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
 								<div class="panel-body">
-									 How old. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+									{{faq.answer}}
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						{% endfor %}
+						{% endif %}
+						<!-- <div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
@@ -517,27 +542,31 @@
 									 So how many. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
 					<div class="panel-group">
+						{% if faqs2 %}
+						{% for faq in faqs2 %}
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-								Can we show sponsors? </a>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.tag}}">
+								{{faq.question}} </a>
 								</h4>
 							</div>
-							<div id="collapseFour" class="panel-collapse collapse">
+							<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
 								<div class="panel-body">
-									 Sponsors. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+									{{faq.answer}}
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						{% endfor %}
+						{% endif %}
+						<!-- <div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
@@ -562,27 +591,32 @@
 									 Medical. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
+
 			<div class="col-md-4 col-sm-12">
 				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
 					<div class="panel-group">
+						{% if faqs3 %}
+						{% for faq in faqs3 %}
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-								Do you help with passport? </a>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.tag}}">
+								{{faq.question}} </a>
 								</h4>
 							</div>
-							<div id="collapseSeven" class="panel-collapse collapse">
+							<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
 								<div class="panel-body">
-									 Passport. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+									{{faq.answer}}
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						{% endfor %}
+						{% endif %}
+						<!-- <div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
@@ -607,38 +641,22 @@
 									 Tax. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>
 </section>
-<!-- Random
-	================================================== -->
-<section class="whitecolor parallax section" style="background-image: url({%static "assets/img/5.jpg" %});">
-<div class="wrapsection">
-	<div class="container">
-	<div class="row">
-		<div class="col-md-12 sol-sm-12">
-			<div class="maintitle">
-				<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span> are the same</h3>
-				<p class="lead bottom0">
-					 Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
-				</p>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
-</section>
+
 <!-- Contact
 	================================================== -->
-<section id="contactarea" class="parallax section" style="background-image: url({%static "assets/img/map.png" %});">
-<div class="wrapsection">
-	<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.90;"></div>
-	<div class="container">
+<!-- <section id="contactarea" class="parallax section" style="background-image: url({%static "assets/img/map.png" %});">
+	<div class="wrapsection">
+		<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.90;"></div>
+		<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="maintitle">
@@ -685,8 +703,8 @@
 			</div>
 		</div>
 	</div>
-</div>
-</section>
+	</div>
+</section> -->
 <!-- Food Donation form
 ====================================================================================-->
 <section id="food-donation" class="parallax section" style="background-image: url(https://source.unsplash.com/1600x900/?food,hunger);">
@@ -697,11 +715,9 @@
                 <div class="col-md-12">
                     <div class="maintitle">
                         <h3 class="section-title">Food Donation Details</h3>
-                        <!--<p class="lead">
-                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
-                        </p> -->
+
                     </div>
-                    <form id="contact"  class="text-left" method="POST" action="fddonate">
+                    <form id="contact"  method="post" action="fddonate">
 											{% csrf_token %}
                         <fieldset>
 
@@ -714,15 +730,10 @@
 																		{% endfor %} -->
                                 </div>
 
-
-
                                 <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="phone">Phone<span class="required">*</span></label>
                                     <input type="text" name="phone_fd" id="phone" size="10" data-msg="Invalid Phone Number" value="" required/>
 																		<span id="pherror"></span>
-
-
-
 																		<!-- {% for err in form.phone_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
@@ -730,7 +741,6 @@
                             </div>
 
                             <div class="row">
-
                                 <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
                                     <label for="Location">Location<span class="required">*</span></label>
                                     <textarea name="Location_fd" id="Location" required></textarea>
@@ -738,12 +748,10 @@
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
                                 </div>
-							</div>
+													 </div>
 
 							<div class="row">
-
 								<div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-
 
                                     <label for="Food type">Food type<span class="required">*</span></label>
                                     <select name="Foodtype_fd" id="Food type" required>
@@ -759,9 +767,7 @@
 																		<!-- {% for err in form.FoodType_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-
-
-								</div>
+																	</div>
 
                                 <div class="col-md-2 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="Amount">Amount (in kg)<span class="required">*</span></label>
@@ -769,7 +775,7 @@
 																		<!-- {% for err in form.Amount_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-								</div>
+																	</div>
 
                                 <div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
 
@@ -787,11 +793,9 @@
 																		<!-- {% for err in form.Reason_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
+																</div>
 
-
-								</div>
-
-                            </div>
+            	</div>
 
 
                             <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
@@ -808,96 +812,134 @@
     </div>
     </section>
 
-    ====================================================================================-->
-<section id="money-donation" class="parallax section" style="background-image: url(https://source.unsplash.com/1600x900/?food,hunger);">
-    <div class="wrapsection">
-        <div class="parallax-overlay" style="background-color: #FFA500;opacity:0.90;"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="maintitle">
-                        <h3 class="section-title">Money Donation Details</h3>
-                        <!--<p class="lead">
-                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
-                        </p> -->
-                    </div>
-                    <form id="contact"  class="text-left" method="POST" action="mydonate">
-											{% csrf_token %}
-                        <fieldset>
+		<!-- Money donation
+	================================================================================================================================================ -->
+	<section id="money-donation" class="parallax section" style="background-image: url({%static "assets/img/map.png" %});">
+	    <div class="wrapsection">
+	        <div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.90;"></div>
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div class="maintitle">
 
-                            <div class="row">
-                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.1s" data-wow-duration="2s">
-                                    <label for="name">Name<span class="required">*</span></label>
-                                    <input type="text" name="name_fd" id="name" size="30" value="" required/>
-																		<!-- {% for err in form.name_fd.errors %}
-																			<small class="danger-text"> {{ err }} </small>
-																		{% endfor %} -->
-                                </div>
+												<div class="alert alert-dismissible container" style="background-color:#FFF3CD" role="alert">
+												<p style="font-size: 20px; color:#444;">This Form is<strong> still under progress.</strong>
+												<button style="font-size:40px" type="button" class="close" data-dismiss="alert" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button></p>
+												</div>
 
+	                        <h3 class="section-title">Money Donation Details</h3>
+	                        <!--<p class="lead">
+	                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+	                        </p> -->
+	                    </div>
+	                    <form id="contact"  class="text-left" method="POST" >
+												{% csrf_token %}
+	                        <fieldset>
 
-
-                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                    <label for="upi">UPI ID<span class="required">*</span></label>
-                                    <input type="text" name="upi_fd" id="upi_id" size="10" data-msg="Invalid UPI ID" value="" required/>
-																		<span id="pherror"></span>
-
-
-
-																		<!-- {% for err in form.phone_fd.errors %}
-																			<small class="danger-text"> {{ err }} </small>
-																		{% endfor %} -->
-                                </div>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5">
-                                    <label for="Amount">Amountt<span class="required">*</span></label>
-                                    <input type="text" name="Amount_fd" id="Amount" size="10" data-msg="Invalid Amount" value="" required/>
-																		<span id="pherror"></span>
-
-																		<!-- {% for err in form.Location_fd.errors %}
-																			<small class="danger-text"> {{ err }} </small>
-																		{% endfor %} -->
-                                </div>
-							</div>
-
-							 <div class="row">
-
-                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
-                                    <label for="Note">Note<span></span></label>
-                                    <textarea name="NOte_fd" id="Note" required></textarea>
-																		<!-- {% for err in form.Location_fd.errors %}
-																			<small class="danger-text"> {{ err }} </small>
-																		{% endfor %} -->
-                                </div>
-							</div>
-
-                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                <div id="smart-button-container">
-      
-                                <a href="upi://pay?pa=bsaithanoj@oksbi&pn=BHUKYA SAITHANOJ&cu=INR" id="__UPI_BUTTON__" style="background: #ff912f;text-align: center;border: 2px solid #8a4100;padding: 10px;text-decoration: none;color: white;border-radius: 10px;">Pay using UPI</a>
-
-                               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="M9SWUWMTWT548">
-<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
-                            </div>
+	                            <div class="row">
+	                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.1s" data-wow-duration="2s">
+	                                    <label for="name">Name<span class="required">*</span></label>
+	                                    <input type="text" name="name_fd" id="name" size="30" value="" required/>
+																			<!-- {% for err in form.name_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+	                                </div>
 
 
-                        </fieldset>
-                    </form>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+	                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+	                                    <label for="upi">UPI ID<span class="required">*</span></label>
+	                                    <input type="text" name="upi_fd" id="upi_id" size="10" data-msg="Invalid UPI ID" value="" required/>
+																			<span id="pherror"></span>
 
-<!-- Bootstrap core JavaScript
-	================================================== -->
+
+
+																			<!-- {% for err in form.phone_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+
+	                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5">
+	                                    <label for="Amount">Amountt<span class="required">*</span></label>
+	                                    <input type="text" name="Amount_fd" id="Amount" size="10" data-msg="Invalid Amount" value="" required/>
+																			<span id="pherror"></span>
+
+																			<!-- {% for err in form.Location_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+	                                </div>
+								</div>
+
+								 <div class="row">
+
+	                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
+	                                    <label for="Note">Note<span></span></label>
+	                                    <textarea name="NOte_fd" id="Note"></textarea>
+																			<!-- {% for err in form.Location_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+	                                </div>
+								</div>
+
+	                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+	                                <div id="smart-button-container">
+
+																		<div style="background: #ff912f;text-align: center;border: 2px solid #8a4100;margin-top:20px; padding: 15px;color: white;" class="col-sm-2">
+																			<a href="upi://pay?pa=bsaithanoj@oksbi&pn=BHUKYA SAITHANOJ&cu=INR" id="_UPI_BUTTON_" ><b>Pay using UPI</b></a>
+																		</div>
+
+	                                <div style="text-align: center;">
+	                                <div id="paypal-button-container" style="margin-top:30px"></div>
+	                                </div>
+	                              </div>
+	                             <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+	                             <script>
+	                                function initPayPalButton() {
+	                                   paypal.Buttons({
+	                                   style: {
+	                                   shape: 'rect',
+	                                   color: 'gold',
+	                                   layout: 'vertical',
+	                                   label: 'paypal',
+
+	                                 },
+
+	                                 createOrder: function(data, actions) {
+	                                     return actions.order.create({
+	                                 purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+	                                });
+	                              },
+
+	                             onApprove: function(data, actions) {
+	                            return actions.order.capture().then(function(details) {
+	                                 alert('Transaction completed by ' + details.payer.name.given_name + '!');
+	                               });
+	                                 },
+
+	                                  onError: function(err) {
+	                                  console.log(err);
+	                                 }
+	                              }).render('#paypal-button-container');
+	                             }
+	                              initPayPalButton();
+	                            </script>
+	                            </div>
+
+
+	                        </fieldset>
+	                    </form>
+
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    </section>
+
 
 <!-- Bootstrap core JavaScript
 	================================================== -->
@@ -908,9 +950,22 @@
 <script src='{% static "assets/js/jquery.scrollTo.min.js" %}'></script>
 <script src='{% static "assets/js/jquery.localScroll.min.js" %}'></script>
 <script src='{% static "assets/js/jquery.magnific-popup.min.js" %}'></script>
-<script src='{% static "assets/js/validate.js" %}'></script>
+<!-- <script src='{% static "assets/js/validate.js" %}'></script> -->
 <script src='{% static "assets/js/common.js" %}'></script>
 <script src='{% static "assets/js/wow.js" %}'></script>
 <script>setTimeout(function(){$('#msg').remove();},20000)</script>
+<!-- <script>window.addEventListener("resize",function change(){if ($(window).width()>600) {$(".payment").hide();$(".paysub").show();} else {$(".paysub").hide();$("payment").show();}});</script>
+<script>
+				if ($(window).width()>600)
+ 					{
+						$(".payment").hide();
+						$(".paysub").show();
+					}
+				else if ($(window).width()<=600)
+					{
+						$(".paysub").hide();
+						$("payment").show();
+					}
+</script> -->
 </body>
 </html>

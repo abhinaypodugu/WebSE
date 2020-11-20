@@ -4,4 +4,5 @@ from django.urls import path
 urlpatterns = [
     path('',views.index, name="Webapp"),
     path('fddonate',views.FoodDonationView),
+    path('login', views.login, name="login"),
 ]
