@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+
+    <head>
+        <link href="{% static "assets/img/favicon1.png" %}" rel="icon">
+        <link rel="stylesheet" type="text/css" href='{% static 'assets/css/login.css' %}'>
+
+    <body>
+
+        <div id="modal-wrapper" class="loginbox modal">
+            {% if messages %}
+            <div class="alert alert-warning" role="alert">
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            </div>
+            {% endif  %}
+            <img src='{% static "assets/img/avatar.png" %}' class="avatar">
+            <h1>Login Here</h1>
+            <form method="post" action="{% url 'Webapp' %}">
+                {% csrf_token %}
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Username">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" name="" value="Login">
+                <a href="#">Lost your password?</a><br>
+                <a href="#">Don't have an account?</a>
+            </form>
+        </div>
+
+    </body>
+    </head>
+
+</html>
