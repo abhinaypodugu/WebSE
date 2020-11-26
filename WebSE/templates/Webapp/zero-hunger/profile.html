@@ -1,0 +1,95 @@
+{% load static %}
+<html lang="en">
+
+  <head>
+    <link href='{% static "assets/img/favicon1.png" %}' rel="icon">
+    <link rel="stylesheet" type="text/css" href='{% static "assets/css/profile.css" %}'>
+    <link rel='stylesheet' href='{% static "assets/css/font-awesome.min.css" %}' />
+    <!-- <link rel='stylesheet' href='{% static "assets/css/bootstrap.min.css" %}'> -->
+    <link rel='stylesheet' href='{% static "assets/css/bootstrap-iso-min.css"%}'>
+
+
+  </head>
+
+  <body>
+
+    <div class="wrapper wrap fluid">
+      <div class="left">
+        <img src="" alt="" width="100">
+        <h4> {{ user.username }} </h4>
+
+        <div class="social_media">
+
+          <a href="#" class="fa fa-facebook"></a>
+          <a> <strong>.</strong> </a>
+          <a href="#" class="fa fa-google"></a>
+          <a> <strong>.</strong> </a>
+          <a href="#" class="fa fa-twitter"></a>
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="info">
+          <h2>Information</h2>
+          <div class="info_data">
+            <div class="data">
+              <h3>Email</h3>
+              <p style="font-size: 18px;">{{ user.email }} </p>
+            </div>
+            <div class="data">
+              <h3>Account Type</h3>
+              <p style="font-size: 18px;"> {{ user.last_name }} </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects bootstrap-iso-min">
+          <h3>Donations</h3>
+
+          <table id="table_donation" class="table table-striped">
+            {% if items %}
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Reason</th>
+              </tr>
+            </thead>
+            {% else %}
+            <p>You have no donation history to show</p>
+            {% endif %}
+            <tbody>
+              <!-- In every row 1st td is intentionally left blank for serial number -->
+              {% if items %}
+              {% for item in items %}
+              <tr>
+                <td>{{item.pk }} </td>
+                <td> {{item.name_fd }} </td>
+                <td>{{item.phone_fd }} </td>
+                <td>{{item.Reason_fd }} </td>
+              </tr>
+              {% endfor %}
+              {% endif %}
+
+
+            </tbody>
+          </table>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- <script>var addSerialNumber = function () {
+        $('table tr').each(function (index) {
+          $(this).find('td:nth-child(1)').html(index + 1);
+        });
+      };
+
+      addSerialNumber();</script> -->
+  </body>
+
+
+
+</html>

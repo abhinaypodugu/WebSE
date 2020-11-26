@@ -1,5 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
 import datetime
+from django.conf import settings
+
 # Create your models here.
 
 
@@ -10,6 +13,8 @@ class FoodDonationModel(models.Model):
     Amount_fd = models.IntegerField()
     FoodType_fd = models.CharField(max_length=256)
     Reason_fd = models.CharField(max_length=256)
+    user_name = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name_fd

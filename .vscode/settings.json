@@ -1,4 +1,6 @@
 {
     "liveServer.settings.useBrowserPreview": true,
-    "python.pythonPath": "C:\\Users\\Abhinay\\anaconda3\\python.exe",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+    ],
 }

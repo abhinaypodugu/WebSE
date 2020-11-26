@@ -1,35 +1,61 @@
-{% load static %}
-<html lang="en">
+<!DOCTYPE html>
+{%load static %}
+<html>
 
     <head>
-        <link href="{% static "assets/img/favicon1.png" %}" rel="icon">
-        <link rel="stylesheet" type="text/css" href='{% static 'assets/css/login.css' %}'>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/login.css' %}">
+        <link href="{% static 'assets/img/favicon1.png' %}" rel="icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
     <body>
-
-        <div id="modal-wrapper" class="loginbox modal">
-            {% if messages %}
-            <div class="alert alert-warning" role="alert">
-                {% for message in messages %}
-                {{ message }}
-                {% endfor %}
+        <img class="wave" src='{% static "assets/img/wave.png" %}'>
+        <div class="container">
+            <div class="img">
+                <img src='{% static "assets/img/bg.svg" %}'>
             </div>
-            {% endif  %}
-            <img src='{% static "assets/img/avatar.png" %}' class="avatar">
-            <h1>Login Here</h1>
-            <form method="post" action="{% url 'Webapp' %}">
-                {% csrf_token %}
-                <p>Username</p>
-                <input type="text" name="username" placeholder="Username">
-                <p>Password</p>
-                <input type="password" name="password" placeholder="Password">
-                <input type="submit" name="" value="Login">
-                <a href="#">Lost your password?</a><br>
-                <a href="#">Don't have an account?</a>
-            </form>
+
+
+            <div class="login-content">
+                <form action="{% url 'Webapp' %}" method="POST">
+
+                    {% csrf_token %}
+                    <img src='{% static "assets/img/avatar.svg" %}'>
+                    <h2 class="title">Welcome</h2>
+                    {% if messages %}
+                    {% for message in messages %}
+                    <p style="color: red; margin-top: -20px;">{{message }}</p>
+                    {% endfor %}
+                    {% endif %}
+                    <div class="input-div one">
+                        <div class="i">
+                            <i style="color: black;" class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <input type="text" id="username" name="username" class="input" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i style="color: black;" class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <input type="password" id="password" name="password" class="input" placeholder="Password">
+                        </div>
+                    </div>
+                    <a href="/reset_password">Forgot Password?</a>
+                    <a href="/register">Don't have an account?</a>
+                    <input type="submit" name="" class="btn" value="Login">
+                </form>
+            </div>
         </div>
+        <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
     </body>
-    </head>
 
 </html>

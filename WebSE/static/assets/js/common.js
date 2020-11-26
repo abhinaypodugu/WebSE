@@ -8,8 +8,8 @@ function init() {
         if (root = document.compatMode.indexOf("CSS") >= 0 ? t : e, activeElement = e, initdone = !0, top != self) frame = !0;
         else if (o > n && (e.offsetHeight <= n || t.offsetHeight <= n)) {
             var r = !1,
-                a = function() {
-                    r || t.scrollHeight == document.height || (r = !0, setTimeout(function() {
+                a = function () {
+                    r || t.scrollHeight == document.height || (r = !0, setTimeout(function () {
                         t.style.height = document.height + "px", r = !1
                     }, 500))
                 };
@@ -37,14 +37,14 @@ function scrollArray(e, t, n, o) {
         lastScroll = +new Date
     }
     if (que.push({
-            x: t,
-            y: n,
-            lastX: 0 > t ? .99 : -.99,
-            lastY: 0 > n ? .99 : -.99,
-            start: +new Date
-        }), !pending) {
+        x: t,
+        y: n,
+        lastX: 0 > t ? .99 : -.99,
+        lastY: 0 > n ? .99 : -.99,
+        start: +new Date
+    }), !pending) {
         var l = e === document.body,
-            c = function() {
+            c = function () {
                 for (var r = +new Date, a = 0, i = 0, s = 0; s < que.length; s++) {
                     var d = que[s],
                         u = r - d.start,
@@ -199,34 +199,34 @@ if (!jQuery(".enable_smoothscroll").length && jQuery(window).width() > 1024) {
         pending = !1,
         lastScroll = +new Date,
         cache = {};
-    setInterval(function() {
+    setInterval(function () {
         cache = {}
     }, 1e4);
-    var uniqueID = function() {
-            var e = 0;
-            return function(t) {
-                return t.uniqueID || (t.uniqueID = e++)
-            }
-        }(),
-        requestFrame = function() {
-            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || function(e, t, n) {
+    var uniqueID = function () {
+        var e = 0;
+        return function (t) {
+            return t.uniqueID || (t.uniqueID = e++)
+        }
+    }(),
+        requestFrame = function () {
+            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || function (e, t, n) {
                 window.setTimeout(e, n || 1e3 / 60)
             }
         }();
-    addEvent("mousedown", mousedown), addEvent("mousewheel", wheel, {passive : false}), addEvent("load", init)
+    addEvent("mousedown", mousedown), addEvent("mousewheel", wheel, { passive: false }), addEvent("load", init)
 }
 
 //---- PARALLAX ---//
 
-(function($) {
+(function ($) {
     var $window = $(window);
     var windowHeight = $window.height();
 
-    $window.resize(function() {
+    $window.resize(function () {
         windowHeight = $window.height();
     });
 
-    $.fn.parallax = function(xpos, speedFactor, outerHeight) {
+    $.fn.parallax = function (xpos, speedFactor, outerHeight) {
         var $this = $(this);
         var getHeight;
         var firstTop;
@@ -235,17 +235,17 @@ if (!jQuery(".enable_smoothscroll").length && jQuery(window).width() > 1024) {
         //get the starting position of each element to have parallax applied to it
         function update() {
 
-            $this.each(function() {
+            $this.each(function () {
 
                 firstTop = $this.offset().top;
             });
 
             if (outerHeight) {
-                getHeight = function(jqo) {
+                getHeight = function (jqo) {
                     return jqo.outerHeight(true);
                 };
             } else {
-                getHeight = function(jqo) {
+                getHeight = function (jqo) {
                     return jqo.height();
                 };
             }
@@ -259,7 +259,7 @@ if (!jQuery(".enable_smoothscroll").length && jQuery(window).width() > 1024) {
 
             var pos = $window.scrollTop();
 
-            $this.each(function() {
+            $this.each(function () {
                 var $element = $(this);
                 var top = $element.offset().top;
                 var height = getHeight($element);
@@ -284,12 +284,12 @@ if (!jQuery(".enable_smoothscroll").length && jQuery(window).width() > 1024) {
 // Parallax Init
 // =============================================
 
-jQuery(window).bind('load', function() {
+jQuery(window).bind('load', function () {
     parallaxInit();
 });
 
 function parallaxInit() {
-    jQuery('.parallax').each(function() {
+    jQuery('.parallax').each(function () {
         jQuery(this).parallax("30%", 0.3);
     });
 }
@@ -301,80 +301,94 @@ function parallax() {
 }
 
 
-	jQuery(document).ready(function($){
+jQuery(document).ready(function ($) {
 
-		/*	Parallax
-		================================================== */
+    /*	Parallax
+    ================================================== */
 
-		$(window).on('scroll', function(e) {
-			parallax();
-		});
+    $(window).on('scroll', function (e) {
+        parallax();
+    });
 
-		/*	Wow Anim
-		================================================== */
-		new WOW().init();
+    /*	Wow Anim
+    ================================================== */
+    new WOW().init();
 
-		/*	Local Scroll
-		================================================== */
+    /*	Local Scroll
+    ================================================== */
 
-		jQuery('.navbar').localScroll({
-			offset: -80,
-			duration: 500
-		});
+    jQuery('.navbar').localScroll({
+        offset: -80,
+        duration: 500
+    });
 
-		/*	Active Menu
-		================================================== */
+    /*	Active Menu
+    ================================================== */
 
-		jQuery(function() {
-			var sections = jQuery('section');
-			var navigation_links = jQuery('nav a');
-			sections.waypoint({
-				handler: function(direction) {
-					var active_section;
-					active_section = jQuery(this);
-					if (direction === "up") active_section = active_section.prev();
-					var active_link = jQuery('nav a[href="#' + active_section.attr("id") + '"]');
-					navigation_links.parent().removeClass("active");
-					active_link.parent().addClass("active");
-					active_section.addClass("active-section");
-				},
-				offset: '35%'
-			});
-		});
+    jQuery(function () {
+        var sections = jQuery('section');
+        var navigation_links = jQuery('nav a');
+        sections.waypoint({
+            handler: function (direction) {
+                var active_section;
+                active_section = jQuery(this);
+                if (direction === "up") active_section = active_section.prev();
+                var active_link = jQuery('nav a[href="#' + active_section.attr("id") + '"]');
+                navigation_links.parent().removeClass("active");
+                active_link.parent().addClass("active");
+                active_section.addClass("active-section");
+            },
+            offset: '35%'
+        });
+    });
 
-		/*	Gallery
-		================================================== */
-			$('#gallery').magnificPopup({
-				delegate: 'a',
-				type: 'image',
-				tLoading: 'Loading image #%curr%...',
-				mainClass: 'mfp-img-mobile',
-				gallery: {
-					enabled: true,
-					navigateByImgClick: true,
-					preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-				},
-				image: {
-					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-					titleSrc: function(item) {
-						return item.el.attr('title') + '<small></small>';
-					}
-				}
-			});
-
-
-		/*	Bootstrap Carousel
-		================================================== */
-
-		jQuery('.carousel').carousel()
+    /*	Gallery
+    ================================================== */
+    $('#gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.el.attr('title') + '<small></small>';
+            }
+        }
+    });
 
 
-	});
+    /*	Bootstrap Carousel
+    ================================================== */
 
-  $('.alert').alert()
-  //
-  // function pherror(){
-  //   var pherror = document.getElementById('pherror')
-  //   var number = document.getElementById('phone')
-  //   if(number.length!=10)
-  // }
+    jQuery('.carousel').carousel()
+
+
+});
+
+$('.alert').alert()
+//
+// function pherror(){
+//   var pherror = document.getElementById('pherror')
+//   var number = document.getElementById('phone')
+//   if(number.length!=10)
+// }
+
+function getLoc() {
+
+    // console.log("hello")
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude
+            var lon = position.coords.longitude
+            console.log(lat, lon)
+            document.getElementById("Location").value = "[ " + lat + ', ' + lon + "]";
+        });
+
+    }
+};
