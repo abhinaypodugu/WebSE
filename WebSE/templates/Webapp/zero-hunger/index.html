@@ -92,6 +92,7 @@
 							<ul class="dropdown-menu">
 								<li> <a href="#food-donation" style="font-family:verdana">Donate Food</a> </li>
 								<li> <a href="#money-donation" style="font-family:verdana">Donate Money</a> </li>
+								<li> <a href="#food-request" style="font-family:verdana">Request Food</a></li>
 							</ul>
 						</li>
 						<li>
@@ -1011,6 +1012,116 @@
 				</div>
 			</div>
 		</section>
+
+				<!-- Food Request
+		--------------------------------------------------------------------------------------------------->
+		
+			<section id="food-request" class="parallax section"
+			style="background-image: url(https://source.unsplash.com/1600x900/?food,hunger);">
+			<div class="wrapsection">
+				<div class="parallax-overlay" style="background-color: #28e417c9;opacity:0.90;"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="maintitle">
+								<h3 class="section-title">Food Request Details</h3>
+							</div>
+
+							<form id="contact" class="text-left" method="POST" action="fdrequest">
+								{% csrf_token %}
+								<fieldset>
+
+									<div class="row">
+										<div class="row">
+										<div class="col-md-6 wow fadeIn animated animated" data-wow-delay="0.1s"
+											data-wow-duration="2s">
+											<label for="name">Name<span class="required">*</span></label>
+											<input type="text" name="name_fd" id="name" size="30" value="" required />
+											<!-- {% for err in form.name_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+										</div>
+
+
+
+										<div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
+											<label for="phone">Phone<span class="required">*</span></label>
+											<input type="text" name="phone_fd" id="phone" size="10"
+												data-msg="Invalid Phone Number" value="" required />
+											<span id="pherror"></span>
+
+
+
+											<!-- {% for err in form.phone_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+										</div>
+									</div>
+
+									<div class="row">
+
+										<div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="1.5" style="margin-top:1px;">
+											<label for="Location">Location<span class="required">*</span></label>
+											<textarea name="Location_fd" id="Location" required></textarea>
+											<!-- {% for err in form.Location_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+
+
+										</div>
+									</div>
+
+									<div class="row">
+
+									
+
+										<div class="col-md-3 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
+											<label for="Persons">No. of persons<span class="required">*</span></label>
+										<!--    <input type="range" name="Persons" id="persons" min = "1" max = "12"  value=""
+												required />    -->
+											<!-- {% for err in form.Amount_fd.errors %}
+																			<small class="danger-text"> {{ err }} </small>
+																		{% endfor %} -->
+											<select name="Persons_fdreq" id="Persons">
+										
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+																			
+											</select>
+										</div>
+
+									</div>
+
+									<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+										<input id="submit" class="submit_fd" type="submit" name="submit" 
+										style="	width:auto;	margin-top:20px; background-color:rgba(0,0,0,0.3);border:0;color:#fff;padding:0px 20px;font-weight:500;text-transform:uppercase;letter-spacing:3px;	font-size:16px;"
+											value="Submit" />
+									</div>
+
+
+								</fieldset>
+							</form>
+
+							<input id="getloc" onclick="getLoc()" value="Get Location" class="submit_fd" type="submit"
+								style="	width:auto;	margin-top:20px; background-color:rgba(0,0,0,0.3);border:0;color:#fff;padding:0px 20px;font-weight:400;text-transform:uppercase;letter-spacing:3px;	font-size:14px;" />
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
 
 		<!-- <div id="login" class="modal fade" role="dialog">
 			<div class="modal-dialog">
