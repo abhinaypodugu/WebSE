@@ -14,8 +14,9 @@
   <body>
 
     <div class="wrapper wrap fluid">
+
       <div class="left">
-        <img src="" alt="" width="100">
+        <img src='{% static "assets/img/avatar.svg" %}' alt="" width="100">
         <h4> {{ user.username }} </h4>
 
         <div class="social_media">
@@ -76,6 +77,25 @@
             </tbody>
           </table>
         </div>
+        <div>
+          <a id="home" href=" {% url 'Webapp' %} ">Go to Homepage</a>
+        </div>
+        <style>
+          #home {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            margin-left: 400px;
+            font-size: 20px;
+            background-color: rgb(66, 183, 255);
+            ;
+          }
+
+          #home:hover {
+            color: rgb(66, 183, 255);
+            background-color: white;
+          }
+        </style>
 
 
 

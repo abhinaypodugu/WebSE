@@ -20,6 +20,18 @@ class FoodDonationModel(models.Model):
         return self.name_fd
 
 
+class FoodRequestModel(models.Model):
+    name_req = models.CharField(max_length=256)
+    phone_req = models.IntegerField()
+    Location_req = models.TextField()
+    persons_req = models.IntegerField()
+    user_name = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.name_req
+
+
 class EventGallery(models.Model):
     image = models.ImageField(upload_to='pics')
     des = models.CharField(max_length=256)

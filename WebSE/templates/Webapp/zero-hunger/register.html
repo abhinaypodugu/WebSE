@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href='{% static "assets/css/login.css" %}'>
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link href="{% static 'assets/img/favicon1.png' %}" rel="icon">
+    <link rel='stylesheet' href='{% static "assets/css/bootstrap-iso-min.css"%}'>
 
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,11 +58,15 @@
             </div>
 
           </div>
-          <a href="/login">Existing User?</a>
-          <select name="acc_type" id="acc_type">
-            <option value="customer">User</option>
-            <option value="merchant">Volunteer</option>
-          </select>
+          <div>
+            <select style="width: 250px; height: 30px; margin-left: -40px; margin-top: 10px;" name="acc_type"
+              id="acc_type">
+              <option value="customer">User</option>
+              <option value="merchant">Volunteer</option>
+            </select>
+            <a style="margin-bottom: -10px;" href="/login">Existing User?</a>
+
+          </div>
           <input type="submit" name="" class="btn" value="Register">
         </form>
       </div>

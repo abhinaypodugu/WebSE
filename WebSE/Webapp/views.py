@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
-from .models import FoodDonationModel, EventGallery, ActiveEvent, FaqsModel
+from .models import FoodDonationModel, EventGallery, ActiveEvent, FaqsModel, FoodRequestModel
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import FoodDonationForm
 from django.contrib import messages
@@ -71,6 +71,34 @@ def FoodDonationView(request):
             info.save()
             messages.success(
                 request, "Form Submission Success!! We will contact you soon...")
+        else:
+            messages.error(
+                request, "Invalid Phone Number!! Fill the form again...")
+        # obj = index()
+        # result = json.loads(obj.readall().decode('utf-8'))
+        # print(result)
+    return redirect('/')
+
+
+def FoodRequestView(request):
+
+    if request.method == 'POST':
+
+        user = request.user
+        name_req = request.POST.get('name_req', False)
+        phone_req = request.POST.get('phone_req', False)
+        Location_req = request.POST.get('Location_req', False)
+        # geolocator = Nominatim(user_agent="Webapp")
+        # print(geolocator.geocode(Location_fd))
+        persons_req = request.POST.get('persons_req', False)
+        if(len(str(phone_req)) == 10):
+            if user is not None:
+                info = FoodRequestModel(user_name=user, name_req=name_req, phone_req=phone_req, Location_req=Location_req,
+                                        persons_req=persons_req)
+
+                info.save()
+                messages.success(
+                    request, "Form Submission Success!! We will contact you soon...")
         else:
             messages.error(
                 request, "Invalid Phone Number!! Fill the form again...")

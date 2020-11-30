@@ -371,7 +371,7 @@ jQuery(document).ready(function ($) {
 
 });
 
-$('.alert').alert()
+$('.alert').alert();
 //
 // function pherror(){
 //   var pherror = document.getElementById('pherror')
@@ -384,10 +384,24 @@ function getLoc() {
     // console.log("hello")
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
-            var lat = position.coords.latitude
-            var lon = position.coords.longitude
-            console.log(lat, lon)
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            console.log(lat, lon);
             document.getElementById("Location").value = "[ " + lat + ', ' + lon + "]";
+        });
+
+    }
+};
+
+function getLocReq() {
+
+    // console.log("hello")
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            console.log(lat, lon);
+            document.getElementById("Location_req").value = "[ " + lat + ', ' + lon + "]";
         });
 
     }
