@@ -157,7 +157,7 @@ img {
 	border-color:#444;
 }
 .btn-primary:hover,.btn-primary:focus {
-	background-color:#444;
+	background-color:#d33c00;
 	border-color:#d33c00;
 }
 .btn-info,.label-info,.alert-info {
@@ -639,7 +639,7 @@ label {
 		height:40px;
 	margin-bottom:0px;
 }
-#contact input#submit {
+#contact input#submit  {
 	width:auto;
 	margin-top:20px;
 	background-color:rgba(0,0,0,0.3);
@@ -1129,9 +1129,7 @@ img.mfp-img {
 	padding-top:0;
 }
 /*	Common	==================================================*/
-.section {
 
-}
 .wrapsection {
     padding-top:140px;
 	padding-bottom:140px;
@@ -1305,6 +1303,7 @@ h6.card-sub-title{
 }
 
 /* Style all font awesome icons */
+
 .fa {
   padding: 10px;
   font-size: 16px;
@@ -1378,4 +1377,17 @@ box-shadow: 0 5px 8px 0 #3B5998;
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
   color:  #f09433;
 
+}
+
+#getloc {
+		width:auto;
+	margin-top:20px;
+	background-color:rgba(0,0,0,0.3);
+	border:0;
+	color:#fff;
+	padding:0px 20px;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-size:14px;
 }

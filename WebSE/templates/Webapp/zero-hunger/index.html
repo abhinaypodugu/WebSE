@@ -1,42 +1,33 @@
 <!doctype html>
 {% load static %}
+
 <html lang="en">
-<head>
+
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>No Hunger</title>
+
+		<link href="{% static 'assets/img/favicon1.png' %}" rel="icon">
+		<!-- Styles -->
+		<link rel='stylesheet' href='{% static "assets/css/bootstrap.min.css" %}'>
+		<link rel='stylesheet' href='{% static "assets/css/bootstrap-iso-min.css"%}'>
+		<link rel='stylesheet' href='{% static "assets/css/animate.min.css" %}'>
+		<link rel='stylesheet' href='{% static "assets/css/font-awesome.min.css" %}' />
+		<link rel='stylesheet' href='{% static "assets/css/style.css" %}' />
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet'
+			type='text/css'>
 
 
-	<!-- Meta, title, CSS, favicons, etc. -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>No Hunger</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
 
-	<link href="{% static "assets/img/favicon1.png" %}"rel="icon">
-	<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
-	<!-- Styles -->
-	<link rel='stylesheet' href='{% static 'assets/css/bootstrap.min.css' %}'>
-	<link rel='stylesheet' href='{% static 'assets/css/bootstrap-iso-min.css'%}'>
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-	<link rel='stylesheet' href='{% static 'assets/css/animate.min.css' %}'>
-	<link rel='stylesheet' href='{% static 'assets/css/font-awesome.min.css' %}'/>
-	<link rel='stylesheet' href='{% static 'assets/css/style.css' %}'/>
-
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="#">
-
-<!-- <style>
+		<!-- <style>
 #picture:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -56,221 +47,245 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 </style> -->
-</head>
-<body >
-<!-- Begin Hero Bg -->
-<div id="parallax">
-</div>
-<!-- End Hero Bg
+	</head>
+
+	<body>
+		<!-- Begin Hero Bg -->
+		<div id="parallax">
+		</div>
+		<!-- End Hero Bg
 	================================================== -->
-<!-- Start Header
+		<!-- Start Header
 	================================================== -->
-<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
-<div class="container">
-	<div class="navbar-header">
-		<!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+		<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 		<span class="sr-only">Toggle navigation</span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button> -->
-		<!-- Your Logo -->
-		<a href="#hero" class="navbar-brand">ZERO <span class="lighter">HUNGER</span></a>
-	</div>
-	<!-- Start Navigation -->
-	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-	<ul class="nav navbar-nav">
-		<li>
-		<a href="#hero">Home</a>
-		</li>
-		<li>
-		<a href="#about">About</a>
-		</li>
-		<li>
-		<a href="#gallery">Gallery</a>
-		</li>
-
-		<li>
-			<a href="#team">Contact &amp; Team</a>
-		</li>
-		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(255, 255, 255); color: #01b0d1; text-shadow: 0.25px 0.25px 0.5px #01b0d1;" >Donate <span class="caret"></span> </a>
-			<ul class="dropdown-menu">
-				<li> <a href="#food-donation" style="font-family:verdana">Donate Food</a> </li>
-				<li> <a href="#money-donation" style="font-family:verdana">Donate Money</a> </li>
-			</ul>
-		</li>
-		<li>
-		<a href="#faq">FAQ</a>
-		</li>
-
-		<li>
-           <a href="/login">Login</a>
-       </li>
-	</ul>
-	</nav>
-</div>
-</header>
-
-<!-- Intro
-	================================================== -->
-<section id="hero" class="section">
-<div class="container">
-	<div class="row">
-		<div class="col-md-5">
-			<div class="herotext">
-
-				{% if messages %}
-				  {% for message in messages %}
-				  <div {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %} style="background-color:#5cb85c; color:#ffffff;" {%endif%} style="color: #ffffff;" class="bootstrap-iso-min alert alert-{{message.tags}}" id="msg" role="alert">
-				    <b>{{ message }}</b>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<a class="alert-link"  style="color:#CCE5FF;" href="#food-donation"><u> Here</u></a>{% endif  %}
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    				<span aria-hidden="true" style="color:#ffffff; font-size:26px;">&times;</span>
-  					</button>
-				  </div>
-				  {% endfor %}
-				{% endif  %}
-
-				<h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">ZERO <span class="lighter">HUNGER</span></h1>
-				<p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
-					When we give cheerfully and accept gratefully, everyone is blessed.
-				</p>
-				<p>
-
-					<a href="#gallery" class="btn btn-default btn-lg wow fadeInLeft" role="button"> View Gallery </a> &nbsp;
-					<a href="#money-donation" class="btn btn-default btn-lg wow fadeInRight" role="button">Find a Cause</a>
-				</p>
-			</div>
-		</div>
-		<div class="col-md-7">
-		</div>
-	</div>
-</div>
-</section>
-<!-- About
-	================================================== -->
-<section id="about" class="parallax section" >
-<div class="wrapsection">
-	<div class="parallax-overlay" style="background-color: #01b0d1;opacity:0.9;"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<!-- Title -->
-				<div class="maintitle">
-					<h3 class="section-title"><strong>FIND <span class="lighter"></span></strong>cause to support on your run</h3>
-					<p class="lead">
-						Mentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae sapien.
-					</p>
+					<!-- Your Logo -->
+					<a href="#hero" class="navbar-brand">ZERO <span class="lighter">HUNGER</span></a>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-6" >
-				<div class="service-box wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">
-					<img src="{{active_event.image.url}}" alt="Image not available yet!!">
-					<h3>{{active_event.date}} <br/>{{active_event.place}}</h3>
-					<div class="text-left">
-						<p>
-							{{ active_event.message }}
-						</p>
+				<!-- Start Navigation -->
+				<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#hero">Home</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#gallery">Gallery</a>
+						</li>
 
-						<p class="text-center">
-							<button type="button" class="btn btn-info btn-md"><a href="{{active_event.file.url}}" download>Learn More</a></button>
-						</p>
+						<li>
+							<a href="#team">Contact &amp; Team</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown"
+								style="background-color: rgb(255, 255, 255); color: #01b0d1; text-shadow: 0.25px 0.25px 0.5px #01b0d1;">Donate
+								<span class="caret"></span> </a>
+							<ul class="dropdown-menu">
+								<li> <a href="#food-donation" style="font-family:verdana">Donate Food</a> </li>
+								<li> <a href="#money-donation" style="font-family:verdana">Donate Money</a> </li>
+							</ul>
+						</li>
+						<li>
+							<a href="#faq">FAQ</a>
+						</li>
+
+
+						<li>
+							{% if user.is_authenticated %}
+							<a href=" /profile "> {{ user.username }} </a>
+
+							{% else %}
+							<a href="/login">Login</a>
+							{% endif %}
+						</li>
+						{% if user.is_authenticated %}
+						<li>
+						<li><a href="logout">Log Out</a></li>
+						</li>
+						{% endif %}
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Intro
+	================================================== -->
+		<section id="hero" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="herotext">
+
+							{% if messages %}
+							{% for message in messages %}
+							<div {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+								style="background-color:#5cb85c; color:#ffffff;" {%endif%} style="color: #ffffff;"
+								class="bootstrap-iso-min alert alert-{{message.tags}}" id="msg" role="alert">
+								<b>{{ message }}</b>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<a
+									class="alert-link" style="color:#CCE5FF;" href="#food-donation"><u>
+										Here</u></a>{% endif  %}
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true" style="color:#ffffff; font-size:26px;">&times;</span>
+								</button>
+							</div>
+							{% endfor %}
+							{% endif  %}
+
+							<h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">ZERO <span
+									class="lighter">HUNGER</span></h1>
+							<p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
+								When we give cheerfully and accept gratefully, everyone is blessed.
+							</p>
+							<p>
+
+								<a href="#gallery" class="btn btn-default btn-lg wow fadeInLeft" role="button"> View
+									Gallery </a> &nbsp;
+								<a href="#money-donation" class="btn btn-default btn-lg wow fadeInRight"
+									role="button">Find a Cause</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-7">
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
-					<span class="glyphicon glyphicon-stats"></span>
-					<h3>1024 Participants</h3>
-					<p>
-						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-					</p>
-					<!-- <button type="button" class="btn btn-info btn-md"><a >Learn More</a></button> -->
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
-					<span class="glyphicon glyphicon-tree-deciduous"></span>
-					<h3>2048 Concerts</h3>
-					<p>
-						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-					</p>
-					<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
-					<span class="glyphicon glyphicon-heart"></span>
-					<h3>512 Sponsors</h3>
-					<p>
-						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-					</p>
-					<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
-					<span class="glyphicon glyphicon-usd"></span>
-					<h3>$4096 Donated</h3>
-					<p>
-						Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-					</p>
-					<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
-<!-- Random
+		</section>
+		<!-- About
 	================================================== -->
-<section class="parallax section" style="background-image: url({% static "assets/img/3.jpg" %});">
-	<div class="wrapsection">
-	<div class="parallax-overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 sol-sm-12">
-				<div class="maintitle">
-					<h3 class="section-title justtitle">Participation is everything</h3>
-					<p class="lead bottom0 wow bounceInUp">
-						Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</section>
-<!-- ****************************************************** -->
-<!-- ********************************************************************************* -->
-<!-- Gallery
-	================================================== -->
-<section id="gallery" class="parallax section" style="background-image: url({% static "assets/img/2.jpg" %});">
-<div class="wrapsection">
-	<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.7;"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 sol-sm-12">
-				<div class="maintitle">
-					<h3 class="section-title">Events Gallery</h3>
-					<p class="lead wow flipInX">
-						Have a look at your past events gallery, see how much fun we have while helping people all over the world. Join our community today!
-					</p>
-				</div>
-			</div>
-			{% for event in events %}
-			<div class="col-md-4">
-				<a href="{{ event.image.url }}" title="{{ event.des }}">
-					<img src="{{ event.image.url }}" alt="" class="image-responsive">
-					<div class="description">
-						<span class="caption"><b>{{ event.des }}</b></span>
-						<span class="camera"><i class="fa fa-camera"></i></span>
-						<div class="clearfix"></div>
+		<section id="about" class="parallax section">
+			<div class="wrapsection">
+				<div class="parallax-overlay" style="background-color: #01b0d1;opacity:0.9;"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Title -->
+							<div class="maintitle">
+								<h3 class="section-title"><strong>FIND <span class="lighter"></span></strong>cause to
+									support on your run</h3>
+								<p class="lead">
+									Take part and make a difference
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="service-box wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">
+								<img src="{{active_event.image.url}}" alt="Image not available yet!!">
+								<h3>{{active_event.date}} <br />{{active_event.place}}</h3>
+								<div class="text-left">
+									<p>
+										{{ active_event.message }}
+									</p>
+
+									<p class="text-center">
+										<button type="button" class="btn btn-info btn-md"><a
+												href="{{active_event.file.url}}" download>Participate</a></button>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+								<span class="glyphicon glyphicon-stats"></span>
+								<h3>1024 Volunteers</h3>
+								<p>
+									Hunger should not be a barrier for bright future.
+								</p>
+								<!-- <button type="button" class="btn btn-info btn-md"><a >Learn More</a></button> -->
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
+								<span class="glyphicon glyphicon-tree-deciduous"></span>
+								<h3>2048 Donation events</h3>
+								<p>
+									Bringing smiles on faces of many people with your participation.
+								</p>
+								<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
+								<span class="glyphicon glyphicon-heart"></span>
+								<h3>12 Sponsors</h3>
+								<p>
+									For donor reward system and events.
+								</p>
+								<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
+								<span class="glyphicon glyphicon-usd"></span>
+								<h3>₹14096 Donated</h3>
+								<p>
+									Your support matters.
+								</p>
+								<!-- <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button> -->
+							</div>
+						</div>
 					</div>
-				</a>
+				</div>
 			</div>
-			{% endfor %}
-			<!-- <div class="col-md-4">
+		</section>
+		<!-- Random
+	================================================== -->
+		<section class="parallax section" style="background-image: url({% static "assets/img/3.jpg" %});">
+			<div class="wrapsection">
+				<div class="parallax-overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 sol-sm-12">
+							<div class="maintitle">
+								<h3 class="section-title justtitle">Participation is everything</h3>
+								<p class="lead bottom0 wow bounceInUp">
+									Become a hunger hero.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ****************************************************** -->
+		<!-- ********************************************************************************* -->
+		<!-- Gallery
+	================================================== -->
+		<section id="gallery" class="parallax section" style="background-image: url({% static "assets/img/2.jpg" %});">
+			<div class="wrapsection">
+				<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.7;"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 sol-sm-12">
+							<div class="maintitle">
+								<h3 class="section-title">Events Gallery</h3>
+								<p class="lead wow flipInX">
+									Have a look at your past events gallery, see how much fun we have while helping
+									people all over the world. Join our community today!
+								</p>
+							</div>
+						</div>
+						{% for event in events %}
+						<div class="col-md-4">
+							<a href="{{ event.image.url }}" title="{{ event.des }}">
+								<img src="{{ event.image.url }}" alt="" class="image-responsive">
+								<div class="description">
+									<span class="caption"><b>{{ event.des }}</b></span>
+									<!--<span class="camera"><i class="fa fa-camera"></i></span>-->
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+						{% endfor %}
+						<!-- <div class="col-md-4">
 				<a href="https://unsplash.imgix.net/uploads/14115408840644deb16b0/2dc933e3?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
 				<img src="https://unsplash.imgix.net/uploads/14115408840644deb16b0/2dc933e3?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
 					<div class="description">
@@ -320,13 +335,13 @@
 					</div>
 				</a>
 			</div> -->
-		</div>
-	</div>
-</div>
-</section>
-<!-- Text Carousel
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Text Carousel
 	================================================== -->
-<!-- <section id="slider" class="parallax section" style="background-image: url({% static "assets/img/4.jpg" %});">
+		<!-- <section id="slider" class="parallax section" style="background-image: url({% static "assets/img/4.jpg" %});">
 <div class="wrapsection">
 	<div class="container">
 		<div class="row">
@@ -376,148 +391,164 @@
 </div>
 </section> -->
 
-<!-- Random
+		<!-- Random
 	================================================== -->
-<section class="whitecolor parallax section" style="background-image: url({%static "assets/img/5.jpg" %});">
-<div class="wrapsection">
-	<div class="container">
-	<div class="row">
-		<div class="col-md-12 sol-sm-12">
-			<div class="maintitle">
-				<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span> are the same</h3>
-				<p class="lead bottom0">
-					 Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
-				</p>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
-</section>
-<!-- Team -->
-<!-- ========================================== -->
-<div class="bootstrap-iso-min">
-
-
-<section id="team" class="parallax section" style="background-image: url({% static "assets/img/2.jpg" %});">
-
-<div class="wrapsection">
-	<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.7;"></div>
-	<div class="container">
-		<div class="row" id="team-row">
-				<div class="maintitle">
-					<h3 class="section-title wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s">Indian Institue of Technology</h3>
-					<p class="lead wow flipInX">
-						Tirupati
-					</p>
-				</div>
-		</div>
-	<div class="row">
-
-			<div class="col-lg-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 25rem; background-color: #ffffff;">
-					<img src="{% static "assets/img/thanoj1.jpg" %}" class="image-fluid image-responsive" id="team-pic" alt="...">
-						<div class="card-body">
-							<h5 class="card-title" style="color:black">Sai Thanoj</h5>
-							<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
-							<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="https://m.me/SaiThanoj" class="fa fa-facebook" ></a>
-							<a href="mailto:cs18b005@iittp.ac.in" class="fa fa-google" ></a>
-							<a href="#" class="fa fa-twitter" ></a>
-							<!-- <a href="#" class="fa fa-instagram" ></a> -->
+		<section class="whitecolor parallax section" style="background-image: url({%static "assets/img/5.jpg" %});">
+			<div class="wrapsection">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 sol-sm-12">
+							<div class="maintitle">
+								<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span>
+									are the same</h3>
+								<p class="lead bottom0">
+									We rise by lifting others.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-
-			<div class="col-md-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" style="width: 25rem;background-color: #ffffff;">
-					<div class="pic"><img src="{% static "assets/img/abhi.jpg" %}" class="image-responsive" id="team-pic" alt="..."></div>
-					<div class="card-body">
-						<h5 class="card-title" style="color:black">Abhinay Podugu</h5>
-						<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
-						<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="https://m.me/AbhinayPodugu" class="fa fa-facebook" ></a>
-						<a href="mailto:cs18b027@iittp.ac.in"  class="fa fa-google" ></a>
-						<a href="#" class="fa fa-twitter" ></a>
-						<!-- <a href="#" class="fa fa-instagram" ></a> -->
-					</div>
-				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" style="width: 25rem;">
-					<img src="{% static "assets/img/rishi.jpg" %}" class="image-responsive" id="team-pic" alt="...">
-					<div class="card-body">
-						<h5 class="card-title" style="color:black">Rishi Vinayaka</h5>
-						<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
-						<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="https://m.me/RishiVinayaka" class="fa fa-facebook" ></a>
-						<a href="mailto:cs18b002@iittp.ac.in" class="fa fa-google" ></a>
-						<a href="#" class="fa fa-twitter" ></a>
-						<!-- <a href="#" class="fa fa-instagram" ></a> -->
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.5s" style="width: 25rem;">
-					<img src="{% static "assets/img/hrudai.jpg" %}" id="team-pic" class="image-responsive" alt="...">
-					<div class="card-body">
-						<h5 class="card-title" style="color:black">AVS Hrudai</h5>
-						<h6 class="card-sub-title" style="color:black"> Team 2 </h6>
-						<p class="card-text" style="color:black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="fa fa-facebook" ></a>
-						<a href="#" class="fa fa-google" ></a>
-						<a href="#" class="fa fa-twitter" ></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-</div>
-</div>
+		</section>
+		<!-- Team -->
+		<!-- ========================================== -->
+		<div class="bootstrap-iso-min">
 
 
+			<section id="team" class="parallax section" style="background-image: url({% static "assets/img/2.jpg" %});">
 
-</section>
-</div>
-
-<!-- FAQ
-	================================================== -->
-<section id="faq" class="section">
-<div class="wrapsection">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 sol-sm-12">
-				<div class="maintitle">
-					<h3 class="section-title">Conditions of <span class="wow bounceInRight">Participation</span></h3>
-					<p class="lead">
-						Sed gravida, tortor in tincidunt sagittis, ligula lacus ultrices justo, sed mattis sem sem ut ex. Ut nunc elit, auctor et quam sit amet, convallis purus.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-
-			<div class="col-md-4 col-sm-12">
-				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
-					<div class="panel-group">
-						{% if faqs1 %}
-						{% for faq in faqs1 %}
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.tag}}">
-								{{faq.question}} </a>
-								</h4>
+				<div class="wrapsection">
+					<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.7;"></div>
+					<div class="container">
+						<div class="row" id="team-row">
+							<div class="maintitle">
+								<h3 class="section-title wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+									Indian Institue of Technology</h3>
+								<p class="lead wow flipInX">
+									Tirupati
+								</p>
 							</div>
-							<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
-								<div class="panel-body">
-									{{faq.answer}}
+						</div>
+						<div class="row">
+
+							<div class="col-lg-3">
+								<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s"
+									style="width: 25rem; background-color: #ffffff;">
+									<img src="{% static "assets/img/thanoj1.jpg" %}"
+										class="image-fluid image-responsive" id="team-pic" alt="...">
+									<div class="card-body">
+										<h5 class="card-title" style="color:black">Sai Thanoj</h5>
+										<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
+										<p class="card-text" style="color:black">Some quick example text to build on the
+											card title and make up the bulk of the card's content.</p>
+										<a href="https://m.me/SaiThanoj" class="fa fa-facebook"></a>
+										<a href="mailto:cs18b005@iittp.ac.in" class="fa fa-google"></a>
+										<a href="#" class="fa fa-twitter"></a>
+										<!-- <a href="#" class="fa fa-instagram" ></a> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s"
+									style="width: 25rem;background-color: #ffffff;">
+									<div class="pic"><img src="{% static "assets/img/abhi.jpg" %}"
+											class="image-responsive" id="team-pic" alt="..."></div>
+									<div class="card-body">
+										<h5 class="card-title" style="color:black">Abhinay Podugu</h5>
+										<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
+										<p class="card-text" style="color:black">Some quick example text to build on the
+											card title and make up the bulk of the card's content.</p>
+										<a href="https://m.me/AbhinayPodugu" class="fa fa-facebook"></a>
+										<a href="mailto:cs18b027@iittp.ac.in" class="fa fa-google"></a>
+										<a href="#" class="fa fa-twitter"></a>
+										<!-- <a href="#" class="fa fa-instagram" ></a> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s"
+									style="width: 25rem;">
+									<img src="{% static "assets/img/rishi.jpg" %}" class="image-responsive"
+										id="team-pic" alt="...">
+									<div class="card-body">
+										<h5 class="card-title" style="color:black">Rishi Vinayaka</h5>
+										<h6 class="card-sub-title" style="color:black">--- Team 2 ---</h6>
+										<p class="card-text" style="color:black">Some quick example text to build on the
+											card title and make up the bulk of the card's content.</p>
+										<a href="https://m.me/RishiVinayaka" class="fa fa-facebook"></a>
+										<a href="mailto:cs18b002@iittp.ac.in" class="fa fa-google"></a>
+										<a href="#" class="fa fa-twitter"></a>
+										<!-- <a href="#" class="fa fa-instagram" ></a> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.5s"
+									style="width: 25rem;">
+									<img src="{% static "assets/img/hrudai.jpg" %}" id="team-pic"
+										class="image-responsive" alt="...">
+									<div class="card-body">
+										<h5 class="card-title" style="color:black">AVS Hrudai</h5>
+										<h6 class="card-sub-title" style="color:black"> Team 2 </h6>
+										<p class="card-text" style="color:black">Some quick example text to build on the
+											card title and make up the bulk of the card's content.</p>
+										<a href="#" class="fa fa-facebook"></a>
+										<a href="#" class="fa fa-google"></a>
+										<a href="#" class="fa fa-twitter"></a>
+									</div>
 								</div>
 							</div>
 						</div>
-						{% endfor %}
-						{% endif %}
-						<!-- <div class="panel panel-default">
+
+					</div>
+				</div>
+
+
+
+			</section>
+		</div>
+
+		<!-- FAQ
+	================================================== -->
+		<section id="faq" class="section">
+			<div class="wrapsection">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 sol-sm-12">
+							<div class="maintitle">
+								<h3 class="section-title">Conditions of <span
+										class="wow bounceInRight">Participation</span></h3>
+								<p class="lead">
+									Willingness to regularly participate in volunteering.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="col-md-4 col-sm-12">
+							<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
+								<div class="panel-group">
+									{% if faqs1 %}
+									{% for faq in faqs1 %}
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapse{{faq.tag}}">
+													{{faq.question}} </a>
+											</h4>
+										</div>
+										<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
+											<div class="panel-body">
+												{{faq.answer}}
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+									{% endif %}
+									<!-- <div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
@@ -543,30 +574,31 @@
 								</div>
 							</div>
 						</div> -->
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
-					<div class="panel-group">
-						{% if faqs2 %}
-						{% for faq in faqs2 %}
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.tag}}">
-								{{faq.question}} </a>
-								</h4>
-							</div>
-							<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
-								<div class="panel-body">
-									{{faq.answer}}
 								</div>
 							</div>
 						</div>
-						{% endfor %}
-						{% endif %}
-						<!-- <div class="panel panel-default">
+						<div class="col-md-4 col-sm-12">
+							<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
+								<div class="panel-group">
+									{% if faqs2 %}
+									{% for faq in faqs2 %}
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapse{{faq.tag}}">
+													{{faq.question}} </a>
+											</h4>
+										</div>
+										<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
+											<div class="panel-body">
+												{{faq.answer}}
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+									{% endif %}
+									<!-- <div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
@@ -592,31 +624,32 @@
 								</div>
 							</div>
 						</div> -->
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-12">
-				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
-					<div class="panel-group">
-						{% if faqs3 %}
-						{% for faq in faqs3 %}
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.tag}}">
-								{{faq.question}} </a>
-								</h4>
-							</div>
-							<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
-								<div class="panel-body">
-									{{faq.answer}}
 								</div>
 							</div>
 						</div>
-						{% endfor %}
-						{% endif %}
-						<!-- <div class="panel panel-default">
+
+						<div class="col-md-4 col-sm-12">
+							<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+								<div class="panel-group">
+									{% if faqs3 %}
+									{% for faq in faqs3 %}
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapse{{faq.tag}}">
+													{{faq.question}} </a>
+											</h4>
+										</div>
+										<div id="collapse{{faq.tag}}" class="panel-collapse collapse">
+											<div class="panel-body">
+												{{faq.answer}}
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+									{% endif %}
+									<!-- <div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
@@ -642,18 +675,18 @@
 								</div>
 							</div>
 						</div> -->
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
+		</section>
 
-		</div>
-	</div>
-</div>
-</section>
-
-<!-- Contact
+		<!-- Contact
 	================================================== -->
-<!-- <section id="contactarea" class="parallax section" style="background-image: url({%static "assets/img/map.png" %});">
+		<!-- <section id="contactarea" class="parallax section" style="background-image: url({%static "assets/img/map.png" %});">
 	<div class="wrapsection">
 		<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.90;"></div>
 		<div class="container">
@@ -705,267 +738,311 @@
 	</div>
 	</div>
 </section> -->
-<!-- Food Donation form
+		<!-- Food Donation form
 ====================================================================================-->
-<section id="food-donation" class="parallax section" style="background-image: url(https://source.unsplash.com/1600x900/?food,hunger);">
-    <div class="wrapsection">
-        <div class="parallax-overlay" style="background-color: #FFA500;opacity:0.90;"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="maintitle">
-                        <h3 class="section-title">Food Donation Details</h3>
+		<section id="food-donation" class="parallax section"
+			style="background-image: url(https://source.unsplash.com/1600x900/?food,hunger);">
+			<div class="wrapsection">
+				<div class="parallax-overlay" style="background-color: #FFA500;opacity:0.90;"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="maintitle">
+								<h3 class="section-title">Food Donation Details</h3>
+								<!--<p class="lead">
+                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+                        </p> -->
+							</div>
+							<form id="contact" class="text-left" method="POST" action="fddonate">
+								{% csrf_token %}
+								<fieldset>
 
-                    </div>
-                    <form id="contact"  method="post" action="fddonate">
-											{% csrf_token %}
-                        <fieldset>
-
-                            <div class="row">
-                                <div class="col-md-6 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
-                                    <label for="name">Name<span class="required">*</span></label>
-                                    <input type="text" name="name_fd" id="name" size="30" value="" required/>
-																		<!-- {% for err in form.name_fd.errors %}
+									<div class="row">
+										<div class="col-md-6 wow fadeIn animated animated" data-wow-delay="0.1s"
+											data-wow-duration="2s">
+											<label for="name">Name<span class="required">*</span></label>
+											<input type="text" name="name_fd" id="name" size="30" value="" required />
+											<!-- {% for err in form.name_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-                                </div>
+										</div>
 
-                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                    <label for="phone">Phone<span class="required">*</span></label>
-                                    <input type="text" name="phone_fd" id="phone" size="10" data-msg="Invalid Phone Number" value="" required/>
-																		<span id="pherror"></span>
-																		<!-- {% for err in form.phone_fd.errors %}
+
+
+										<div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
+											<label for="phone">Phone<span class="required">*</span></label>
+											<input type="text" name="phone_fd" id="phone" size="10"
+												data-msg="Invalid Phone Number" value="" required />
+											<span id="pherror"></span>
+
+
+
+											<!-- {% for err in form.phone_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-                                </div>
-                            </div>
+										</div>
+									</div>
 
-                            <div class="row">
-                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
-                                    <label for="Location">Location<span class="required">*</span></label>
-                                    <textarea name="Location_fd" id="Location" required></textarea>
-																		<!-- {% for err in form.Location_fd.errors %}
+									<div class="row">
+
+										<div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="1.5" style="margin-top:1px;">
+											<label for="Location">Location<span class="required">*</span></label>
+											<textarea name="Location_fd" id="Location" required></textarea>
+											<!-- {% for err in form.Location_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-                                </div>
-													 </div>
 
-							<div class="row">
-								<div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
 
-                                    <label for="Food type">Food type<span class="required">*</span></label>
-                                    <select name="Foodtype_fd" id="Food type" required>
+										</div>
+									</div>
 
-                                    <option value="">None</option>
-                                    <option value="Cooked food">Cooked food</option>
-                                    <option value="Packaged food">Packaged food</option>
-                                    <option value="Fruits and vegetables">Fruits and vegetables</option>
-                                    <option value="Snacks">Snacks</option>
-                                    <option value="Grains">Grains</option>
-                                    <option value="Others">Others</option>
-                                    </select>
-																		<!-- {% for err in form.FoodType_fd.errors %}
+									<div class="row">
+
+										<div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
+
+
+											<label for="Food type">Food type<span class="required">*</span></label>
+											<select name="Foodtype_fd" id="Food type" required>
+
+												<option value="">None</option>
+												<option value="Cooked food">Cooked food</option>
+												<option value="Packaged food">Packaged food</option>
+												<option value="Fruits and vegetables">Fruits and vegetables</option>
+												<option value="Snacks">Snacks</option>
+												<option value="Grains">Grains</option>
+												<option value="Others">Others</option>
+											</select>
+											<!-- {% for err in form.FoodType_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-																	</div>
 
-                                <div class="col-md-2 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                    <label for="Amount">Amount (in kg)<span class="required">*</span></label>
-                                    <input type="Amount" name="Amount_fd" id="Amount" size="10" value="" required/>
-																		<!-- {% for err in form.Amount_fd.errors %}
+
+										</div>
+
+										<div class="col-md-2 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
+											<label for="Amount">Amount (in kg)<span class="required">*</span></label>
+											<input type="Amount" name="Amount_fd" id="Amount" size="10" value=""
+												required />
+											<!-- {% for err in form.Amount_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-																	</div>
+										</div>
 
-                                <div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+										<div class="col-md-5 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
 
-                                    <!-- <label for="Reason">Reason for donating (optional):</label>   -->
-                                    <label for="Reason">Reason for donating (optional): </span></label>
-                                    <select name="Reason_fd" id="Reason" >
+											<!-- <label for="Reason">Reason for donating (optional):</label>   -->
+											<label for="Reason">Reason for donating (optional): </span></label>
+											<select name="Reason_fd" id="Reason">
 
-                                    <option value="">None</option>
-                                    <option value="Excess food">Excess food</option>
-                                    <option value="Not very tasty">Not very tasty</option>
-                                    <option value="Soon to be expired">Soon to be expired</option>
-                                    <option value="Religious">Religious</option>
-                                    <option value="Others">Others</option>
-                                    </select>
-																		<!-- {% for err in form.Reason_fd.errors %}
+												<option value="">None</option>
+												<option value="Excess food">Excess food</option>
+												<option value="Not very tasty">Not very tasty</option>
+												<option value="Soon to be expired">Soon to be expired</option>
+												<option value="Religious">Religious</option>
+												<option value="Others">Others</option>
+											</select>
+											<!-- {% for err in form.Reason_fd.errors %}
 																			<small class="danger-text"> {{ err }} </small>
 																		{% endfor %} -->
-																</div>
-
-            	</div>
 
 
-                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                <input id="submit" class="submit_fd" type="submit" name="submit" value="Submit"/>
-                            </div>
+										</div>
+
+									</div>
 
 
-                        </fieldset>
-                    </form>
+									<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+										<input id="submit" class="submit_fd" type="submit" name="submit"
+											value="Submit" />
+									</div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+
+								</fieldset>
+							</form>
+							<input id="getloc" onclick="getLoc()" value="Get Location" class="submit_fd" type="submit"
+								style="	width:auto;	margin-top:20px; background-color:rgba(0,0,0,0.3);border:0;color:#fff;padding:0px 20px;font-weight:400;text-transform:uppercase;letter-spacing:3px;	font-size:14px;" />
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- Money donation
 	================================================================================================================================================ -->
-	<section id="money-donation" class="parallax section" style="background-image: url({%static "assets/img/map.png" %});">
-	    <div class="wrapsection">
-	        <div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.90;"></div>
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-md-12">
-	                    <div class="maintitle">
-
-												<div class="alert alert-dismissible container" style="background-color:#FFF3CD" role="alert">
-												<p style="font-size: 20px; color:#444;">This Form is<strong> still under progress.</strong>
-												<button style="font-size:40px" type="button" class="close" data-dismiss="alert" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button></p>
-												</div>
-
-	                        <h3 class="section-title">Money Donation Details</h3>
-	                        <!--<p class="lead">
+		<section id="money-donation" class="parallax section"
+			style="background-image: url({%static "assets/img/map.png" %});">
+			<div class="wrapsection">
+				<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.90;"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="maintitle">
+								<h3 class="section-title">Money Donation Details</h3>
+								<!--<p class="lead">
 	                            If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
 	                        </p> -->
-	                    </div>
-	                    <form id="contact"  class="text-left" method="POST" >
-												{% csrf_token %}
-	                        <fieldset>
-
-	                            <div class="row">
-	                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.1s" data-wow-duration="2s">
-	                                    <label for="name">Name<span class="required">*</span></label>
-	                                    <input type="text" name="name_fd" id="name" size="30" value="" required/>
-																			<!-- {% for err in form.name_fd.errors %}
-																				<small class="danger-text"> {{ err }} </small>
-																			{% endfor %} -->
-	                                </div>
-
-
-
-	                                <div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-	                                    <label for="upi">UPI ID<span class="required">*</span></label>
-	                                    <input type="text" name="upi_fd" id="upi_id" size="10" data-msg="Invalid UPI ID" value="" required/>
-																			<span id="pherror"></span>
-
-
-
-																			<!-- {% for err in form.phone_fd.errors %}
-																				<small class="danger-text"> {{ err }} </small>
-																			{% endfor %} -->
-	                                </div>
-	                            </div>
-
-	                            <div class="row">
-
-	                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5">
-	                                    <label for="Amount">Amountt<span class="required">*</span></label>
-	                                    <input type="text" name="Amount_fd" id="Amount" size="10" data-msg="Invalid Amount" value="" required/>
-																			<span id="pherror"></span>
-
-																			<!-- {% for err in form.Location_fd.errors %}
-																				<small class="danger-text"> {{ err }} </small>
-																			{% endfor %} -->
-	                                </div>
+								<div class="alert alert-dismissible container" style="background-color:#FFF3CD"
+									role="alert">
+									<p style="font-size: 20px; color:#444;">This Form is<strong> still under
+											progress.</strong>
+										<button style="font-size:40px" type="button" class="close" data-dismiss="alert"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button></p>
 								</div>
 
-								 <div class="row">
+							</div>
+							<form id="contact" class="text-left" method="POST">
+								{% csrf_token %}
+								<fieldset>
 
-	                                <div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:1px;">
-	                                    <label for="Note">Note<span></span></label>
-	                                    <textarea name="NOte_fd" id="Note"></textarea>
-																			<!-- {% for err in form.Location_fd.errors %}
+									<div class="row">
+										<div class="col-md-6 wow fadeIn animated" data-wow-delay="0.1s"
+											data-wow-duration="2s">
+											<label for="name">Name<span class="required">*</span></label>
+											<input type="text" name="name_fd" id="name" size="30" value="" required />
+											<!-- {% for err in form.name_fd.errors %}
 																				<small class="danger-text"> {{ err }} </small>
 																			{% endfor %} -->
-	                                </div>
-								</div>
-
-	                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-	                                <div id="smart-button-container">
-
-																		<div style="background: #ff912f;text-align: center;border: 2px solid #8a4100;margin-top:20px; padding: 15px;color: white;" class="col-sm-2">
-																			<a href="upi://pay?pa=bsaithanoj@oksbi&pn=BHUKYA SAITHANOJ&cu=INR" id="_UPI_BUTTON_" ><b>Pay using UPI</b></a>
-																		</div>
-
-	                                <div style="text-align: center;">
-	                                <div id="paypal-button-container" style="margin-top:30px"></div>
-	                                </div>
-	                              </div>
-	                             <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-	                             <script>
-	                                function initPayPalButton() {
-	                                   paypal.Buttons({
-	                                   style: {
-	                                   shape: 'rect',
-	                                   color: 'gold',
-	                                   layout: 'vertical',
-	                                   label: 'paypal',
-
-	                                 },
-
-	                                 createOrder: function(data, actions) {
-	                                     return actions.order.create({
-	                                 purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
-	                                });
-	                              },
-
-	                             onApprove: function(data, actions) {
-	                            return actions.order.capture().then(function(details) {
-	                                 alert('Transaction completed by ' + details.payer.name.given_name + '!');
-	                               });
-	                                 },
-
-	                                  onError: function(err) {
-	                                  console.log(err);
-	                                 }
-	                              }).render('#paypal-button-container');
-	                             }
-	                              initPayPalButton();
-	                            </script>
-	                            </div>
+										</div>
 
 
-	                        </fieldset>
-	                    </form>
 
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    </section>
+										<div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="2s">
+											<label for="upi">UPI ID<span class="required">*</span></label>
+											<input type="text" name="upi_fd" id="upi_id" size="10"
+												data-msg="Invalid UPI ID" value="" required />
+											<span id="pherror"></span>
 
 
-<!-- Bootstrap core JavaScript
+
+											<!-- {% for err in form.phone_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+										</div>
+									</div>
+
+									<div class="row">
+
+										<div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="1.5">
+											<label for="Amount">Amount<span class="required">*</span></label>
+											<input type="text" name="Amount_fd" id="Amount" size="10"
+												data-msg="Invalid Amount" value="" required />
+											<span id="pherror"></span>
+
+											<!-- {% for err in form.Location_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+										</div>
+									</div>
+
+									<div class="row">
+
+										<div class="col-md-7 wow fadeIn animated" data-wow-delay="0.3s"
+											data-wow-duration="1.5" style="margin-top:1px;">
+											<label for="Note">Note<span></span></label>
+											<textarea name="NOte_fd" id="Note"></textarea>
+											<!-- {% for err in form.Location_fd.errors %}
+																				<small class="danger-text"> {{ err }} </small>
+																			{% endfor %} -->
+										</div>
+									</div>
+
+									<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+										<div id="smart-button-container">
+											<div style="background: #ff912f;text-align: center;border: 2px solid #8a4100;margin-top:20px; padding: 15px;color: white;"
+												class="col-sm-2">
+												<a href="upi://pay?pa=bsaithanoj@oksbi&pn=BHUKYA SAITHANOJ&cu=INR"
+													id="_UPI_BUTTON_"><b>Pay using UPI</b></a>
+
+											</div>
+											<div style="text-align: center;">
+												<div id="paypal-button-container" style="margin-top:30px"></div>
+											</div>
+										</div>
+										<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+											data-sdk-integration-source="button-factory"></script>
+										<script>
+											function initPayPalButton() {
+												paypal.Buttons({
+													style: {
+														shape: 'rect',
+														color: 'gold',
+														layout: 'vertical',
+														label: 'paypal',
+
+													},
+
+													createOrder: function (data, actions) {
+														return actions.order.create({
+															purchase_units: [{ "amount": { "currency_code": "USD", "value": 1 } }]
+														});
+													},
+
+													onApprove: function (data, actions) {
+														return actions.order.capture().then(function (details) {
+															alert('Transaction completed by ' + details.payer.name.given_name + '!');
+														});
+													},
+
+													onError: function (err) {
+														console.log(err);
+													}
+												}).render('#paypal-button-container');
+											}
+											initPayPalButton();
+										</script>
+									</div>
+
+
+								</fieldset>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <div id="login" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-body">
+						<button data-dismiss="modal" class="close">&times;</button>
+						<h4>Login</h4>
+						<form>
+							<input type="text" name="username" class="username form-control" placeholder="Username" />
+							<input type="password" name="password" class="password form-control"
+								placeholder="password" />
+							<input class="btn login" type="submit" value="Login" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- Bootstrap core JavaScript
 	================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src='{% static "assets/js/jquery.min.js" %}'></script>
-<script src='{% static "assets/js/bootstrap.min.js" %}'></script>
-<script src='{% static "assets/js/waypoints.min.js" %}'></script>
-<script src='{% static "assets/js/jquery.scrollTo.min.js" %}'></script>
-<script src='{% static "assets/js/jquery.localScroll.min.js" %}'></script>
-<script src='{% static "assets/js/jquery.magnific-popup.min.js" %}'></script>
-<!-- <script src='{% static "assets/js/validate.js" %}'></script> -->
-<script src='{% static "assets/js/common.js" %}'></script>
-<script src='{% static "assets/js/wow.js" %}'></script>
-<script>setTimeout(function(){$('#msg').remove();},20000)</script>
-<!-- <script>window.addEventListener("resize",function change(){if ($(window).width()>600) {$(".payment").hide();$(".paysub").show();} else {$(".paysub").hide();$("payment").show();}});</script>
-<script>
-				if ($(window).width()>600)
- 					{
-						$(".payment").hide();
-						$(".paysub").show();
-					}
-				else if ($(window).width()<=600)
-					{
-						$(".paysub").hide();
-						$("payment").show();
-					}
-</script> -->
-</body>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src='{% static "assets/js/jquery.min.js" %}'></script>
+		<script src='{% static "assets/js/bootstrap.min.js" %}'></script>
+		<script src='{% static "assets/js/waypoints.min.js" %}'></script>
+		<script src='{% static "assets/js/jquery.scrollTo.min.js" %}'></script>
+		<script src='{% static "assets/js/jquery.localScroll.min.js" %}'></script>
+		<script src='{% static "assets/js/jquery.magnific-popup.min.js" %}'></script>
+		<script src='{% static "assets/js/common.js" %}'></script>
+		<script src='{% static "assets/js/wow.js" %}'></script>
+		<script>setTimeout(function () { $('#msg').remove(); }, 20000)</script>
+
+	</body>
+
 </html>
